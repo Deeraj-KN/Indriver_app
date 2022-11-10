@@ -79,4 +79,9 @@
             uni_modal("Booking Details","view_booking.php?id="+$(this).attr('data-id'))
         })
     })
+
+
+
+
+    
 </script>
