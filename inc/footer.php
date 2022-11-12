@@ -11,6 +11,11 @@
         var view = $("<video src='"+$src+"' controls autoplay></video>")
       }else{
         var view = $("<img src='"+$src+"' />")
+
+
+
+
+        
       }
       $('#viewer_modal .modal-content video,#viewer_modal .modal-content img').remove()
       $('#viewer_modal .modal-content').append(view)
