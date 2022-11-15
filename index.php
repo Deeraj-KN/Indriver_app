@@ -11,6 +11,7 @@
       </script>
 <?php endif;?>
 <?php 
+
     if(!file_exists($page.".php") && !is_dir($page)){
         include '404.html';
     }else{
