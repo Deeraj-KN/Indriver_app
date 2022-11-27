@@ -15,6 +15,7 @@
           background-size:cover;  
       }
       #logo-img{
+        
           /* width:15em;
           height:15em; */
           object-fit:scale-down;

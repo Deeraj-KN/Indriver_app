@@ -9,6 +9,7 @@
 		<div class="card-tools">
 			<a href="javascript:void(0)" id="create_new" class="btn btn-flat btn-primary btn-sm"><span class="fas fa-plus"></span>  Create New</a>
 		</div>
+		
 	</div>
 	<div class="card-body">
 		<div class="container-fluid">

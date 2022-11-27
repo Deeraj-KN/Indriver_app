@@ -7,6 +7,7 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
         }
     }
 }
+
 ?>
 <div class="card card-outline card-info">
 	<div class="card-header">

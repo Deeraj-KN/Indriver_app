@@ -21,9 +21,12 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
         display:none
     }
 </style>
+
 <div class="container-fluid">
     <div class="row">
+
         <div class="col-md-6">
+
             <fieldset class="border-bottom">
             <legend class="h5 text-muted"> Cab Details</legend>
             <dl>
@@ -48,14 +51,19 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
                 <legend class="h5 text-muted"> Booking Details</legend>
                 <dl>
                     <dt class="">Ref. Code</dt>
+
                     <dd class="pl-4"><?= isset($ref_code) ? $ref_code : "" ?></dd>
                     <dt class="">Client</dt>
+
                     <dd class="pl-4"><?= isset($client) ? $client : "" ?></dd>
                     <dt class="">Pickup Zone</dt>
+
                     <dd class="pl-4"><?= isset($pickup_zone) ? $pickup_zone : "" ?></dd>
                     <dt class="">Drop off Zone</dt>
+
                     <dd class="pl-4"><?= isset($drop_zone) ? $drop_zone : "" ?></dd>
                     <dt class="">Status</dt>
+                    
                     <dd class="pl-4">
                         <?php 
                             switch($status){

@@ -5,6 +5,7 @@
 <?php endif;?>
 
 <style>
+
     .img-avatar{
         width:45px;
         height:45px;
@@ -20,6 +21,7 @@
 			<a href="?page=user/manage_user" class="btn btn-flat btn-success btn-sm"><span class="fas fa-plus"></span>  Add New User</a>
 		</div>
 	</div>
+	
 	<div class="card-body">
 		<div class="container-fluid">
         <div class="container-fluid">

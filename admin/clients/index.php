@@ -9,6 +9,7 @@
 	</div>
 	<div class="card-body">
 		<div class="container-fluid">
+
         <div class="container-fluid">
 			<table class="table table-bordered table-stripped table-hover">
 				<colgroup>
@@ -20,6 +21,7 @@
 					<col width="15%">
 				</colgroup>
 				<thead>
+
 				<tr class="bg-gradient-dark text-light">
 						<th>#</th>
 						<!-- <th>Date Created</th> -->
@@ -38,6 +40,7 @@
 								$row[$k] = trim(stripslashes($v));
 							}
 					?>
+				         <!-- table row creation -->
 						<tr>
 							<td class="text-center"><?php echo $i++; ?></td>
 							<!-- <td><?php echo date("Y-m-d H:i",strtotime($row['date_created'])) ?></td> -->

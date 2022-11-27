@@ -11,6 +11,7 @@ foreach($user->fetch_array() as $k =>$v){
 <?php endif;?>
 <div class="card card-outline card-purple">
 	<div class="card-body">
+	
 		<div class="container-fluid">
 			<div id="msg"></div>
 			<form action="" id="manage-user">	

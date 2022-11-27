@@ -16,6 +16,7 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
         object-position:center center;
     }
 </style>
+
 <div class="content py-3">
     <div class="card card-outline rounded-0 card-purple shadow">
         <div class="card-header">
@@ -26,6 +27,7 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
                 <a class="btn btn-default border btn-sm btn-flat" href="./?page=cabs"><i class="fa fa-angle-left"></i> Back</a>
             </div>
         </div>
+
         <div class="card-body">
             <div class="container">
                 <div class="row">
@@ -38,10 +40,12 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
                         <small class="mx-2 text-muted">Registeration Code</small>
                         <div class="pl-4"><?= isset($reg_code) ? $reg_code : '' ?></div>
                     </div>
+
                     <div class="col-md-6">
                         <small class="mx-2 text-muted">Category</small>
                         <div class="pl-4"><?= isset($category) ? $category : '' ?></div>
                     </div>
+
                 </div>
                 <fieldset>
                     <legend class="h4 text-muted"><b>Cab Details</b></legend>
@@ -55,6 +59,7 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
                             <div class="pl-4"><?= isset($cab_model) ? $cab_model : '' ?></div>
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="col-md-6">
                             <small class="mx-2 text-muted">Body No.</small>
@@ -100,12 +105,14 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
     </div>
 </div>
 
+
 <script>
     $(document).ready(function(){
 		$('#delete_data').click(function(){
 			_conf("Are you sure to delete this cab permanently?","delete_cab",[])
 		})
     })
+    
     function delete_cab($id = '<?= isset($id) ? $id : "" ?>'){
 		start_loader();
 		$.ajax({

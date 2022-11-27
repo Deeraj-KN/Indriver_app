@@ -12,6 +12,7 @@ while($row = $meta->fetch_assoc()){
 }
 ?>
 <style>
+    
     #uni_modal .modal-footer{
         display:none
     }

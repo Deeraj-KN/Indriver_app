@@ -13,6 +13,7 @@
         alert_toast("<?php echo $_settings->flashdata('success') ?>",'success')
       </script>
     <?php endif;?>
+    
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper pt-3" style="min-height: 567.854px;">
       

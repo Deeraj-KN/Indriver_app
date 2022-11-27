@@ -14,6 +14,7 @@ $services  = $conn->query("SELECT * FROM service_list where id in ({$service_id}
     #uni_modal .modal-footer{
         display:none
     }
+    
 </style>
 <div class="container-fluid">
     <div class="row">

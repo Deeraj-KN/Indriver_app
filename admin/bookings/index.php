@@ -3,7 +3,9 @@
         <h3 class="card-title">Booking List</h3>
     </div>
     <div class="card-body">
+
         <div class="container-fluid">
+
             <table class="table table-striped table-bordered table-hover">
                 <colgroup>
                     <col width="5%">
@@ -26,6 +28,7 @@
                     </tr>
                 </thead>
                 <tbody>
+
                     <?php 
                     $i = 1;
                     $bookings = $conn->query("SELECT b.*,concat(c.lastname,', ', c.firstname,' ',c.middlename) as client, cab_reg_no FROM `booking_list` b inner join client_list c on b.client_id = c.id inner join cab_list cc on b.cab_id = cc.id order by unix_timestamp(b.date_created) desc ");
@@ -71,8 +74,10 @@
     </div>
 </div>
 <script>
+
     $(function(){
 
+        
         $('.table th, .table td').addClass("align-middle px-2 py-1")
 		$('.table').dataTable();
 		$('.table').dataTable();

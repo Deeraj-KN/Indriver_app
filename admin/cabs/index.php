@@ -10,6 +10,7 @@
 			<a href="?page=cabs/manage_cab" class="btn btn-flat btn-success btn-sm"><span class="fas fa-plus"></span>  Add New Cab</a>
 		</div>
 	</div>
+
 	<div class="card-body">
 		<div class="container-fluid">
         <div class="container-fluid">
@@ -37,6 +38,7 @@
 					</tr>
 				</thead>
 				<tbody>
+
 					<?php 
 					$i = 1;
 						$qry = $conn->query("SELECT c.*,cc.name as category from `cab_list` c inner join category_list cc on c.category_id = cc.id where c.delete_flag = 0 order by (c.`reg_code`) asc ");
@@ -46,6 +48,7 @@
 							}
 					?>
 						<tr>
+							
 							<td class="text-center"><?php echo $i++; ?></td>
 							<!-- <td><?php echo date("Y-m-d H:i",strtotime($row['date_created'])) ?></td> -->
 							<td><?php echo ucwords($row['reg_code']) ?></td>

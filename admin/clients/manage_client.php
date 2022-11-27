@@ -66,6 +66,7 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
 		</form>
 	</div>
 	<div class="card-footer">
+		<!-- we are managing clients here  -->
 		<button class="btn btn-flat btn-success" form="client-form">Save</button>
 		<a class="btn btn-flat btn-danger" href="?page=client">Cancel</a>
 	</div>
@@ -79,6 +80,8 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
                 $(this).closest('.input-group').find('input').attr('type',"text")
                 $(this).removeClass("fa-eye-slash")
                 $(this).addClass("fa-eye")
+
+
             }else{
                 $(this).attr('data-type','password')
                 $(this).closest('.input-group').find('input').attr('type',"password")
@@ -92,6 +95,8 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
 			 $('.err-msg').remove();
 			start_loader();
 			$.ajax({
+
+
 				url:_base_url_+"classes/Users.php?f=save_client",
 				data: new FormData($(this)[0]),
                 cache: false,
@@ -110,7 +115,8 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
 						location.href = "./?page=clients";
 					}else if(resp.status == 'failed' && !!resp.msg){
                         var el = $('<div>')
-                            el.addClass("alert alert-danger err-msg").text(resp.msg)
+                            
+						    el.addClass("alert alert-danger err-msg").text(resp.msg)
                             _this.prepend(el)
                             el.show('slow')
                             $("html, body").animate({ scrollTop: _this.closest('.card').offset().top }, "fast");
