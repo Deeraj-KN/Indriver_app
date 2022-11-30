@@ -15,6 +15,7 @@
         <div class="card shadow card-outline card-purple rounded-0">
             <div class="card-body">
                 <?php include './welcome.html' ?>
+                
             </div>
         </div>
     </div>
