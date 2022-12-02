@@ -40,6 +40,11 @@
       <center><img src="<?= validate_image($_settings->info('logo')) ?>" alt="System Logo" class="img-thumbnail rounded-circle" id="logo-img"></center>
       <div class="clear-fix my-2"></div>
   </div> -->
+  <!-- /.login-logo -->
+  <!-- <div class="d-flex  justify-content-center align-items-center col-lg-5">
+      <center><img src="<?= validate_image($_settings->info('logo')) ?>" alt="System Logo" class="img-thumbnail rounded-circle" id="logo-img"></center>
+      <div class="clear-fix my-2"></div>
+  </div> -->
   <div class="d-flex  justify-content-center align-items-center col-lg-7 bg-gradient-light text-dark">
     <div class="card card-outline card-purple w-75">
       <div class="card-header text-center">
