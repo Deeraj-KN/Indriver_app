@@ -26,6 +26,9 @@ function validate_image($file){
 	}else{
 		return base_url.'dist/img/no-image-available.png';
 	}
+
+
+    
 }
 function isMobileDevice(){
     $aMobileUA = array(
